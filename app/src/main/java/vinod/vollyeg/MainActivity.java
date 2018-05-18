@@ -1,29 +1,21 @@
 package vinod.vollyeg;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONObject;
-import org.xmlpull.v1.XmlSerializer;
-
-import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     String tag_json_obj = "json_obj_req";
 
-    String url = "https://api.androidhive.info/volley/person_object.json";
+    String url = "";
 //    String url = "http://kwalitysfa.winitsoftware.com/services.asmx"; //https://stackoverflow.com/questions/43678487/post-xml-request-and-xml-response-volley-library
     String TAG = "JSON_OBJECT_REQUEST";
     ProgressDialog pDialog;
